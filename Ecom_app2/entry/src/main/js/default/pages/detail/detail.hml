@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="header">
+        <text style="width: 12%; background-color: lightgrey; border-radius: 5px;" onclick="indexPage">{{back}}</text>
+        <text style="width: 76%; text-align: center;">Detail</text>
+        <text style="width: 12%; font-weight: bold;">..</text>
+    </div>
+    <div class="detail-image">
+        <image src="../../common/images/s3.png"></image>
+        <div class="review">
+            <div>
+                <rating numstars="1" rating="1" style="width:30%; margin-top: 2px;"></rating>
+                <text style="color: white; font-weight: bold;">4.5</text>
+            </div>
+            <text style="position: relative; margin-left: 10px; font-size: 15px; font-weight: bold; color: white;">220 reviews</text>
+        </div>
+    </div>
+    <text style="font-weight: bold; font-size: 30px; margin-top: 15px;">Running Unisex Shoes</text>
+    <text style="font-weight: bold; font-size: 30px; margin-top: 15px;">$200</text>
+    <text style="font-size: 15px; margin-top: 15px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been. My name is Sushanta Senapati. Do you want to</text>
+    <text style="font-weight: bold; font-size: 17px;">Read More ...</text>
+    <div class="color">
+        <text style="font-size: 25px;">Color</text>
+        <button type="circle" style="background-color: blue; width: 15px; margin-left: 40px; margin-top: 4px;"></button>
+        <button type="circle" style="background-color: yellow; width: 15px; margin-left: 20px; margin-top: 4px;"></button>
+        <button type="circle" style="background-color: red; width: 15px; margin-left: 20px; margin-top: 4px;"></button>
+        <div style="background-color: deepskyblue; position: absolute; right: 0; border-radius: 10px;">
+            <button style="background-color: white; text-color: black; width: 35px; height: 35px;" onclick="incrementVal">+</button>
+            <text style="margin: 2px 5px; color: white;">{{inx}}</text>
+            <button style="background-color: white; text-color: black; width: 35px; height: 35px;" onclick="decrementVal">-</button>
+        </div>
+    </div>
+    <div class="sizes">
+        <text style="font-size: 25px;">Available Sizes</text>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 10px;">
+            <button type="capsule" style="background-color: lightgrey; width:23%; ">6 inches</button>
+            <button type="capsule" style="background-color: lightgrey; width:23%; ">7 inches</button>
+            <button type="capsule" style="background-color: blue; width:23%; ">8 inches</button>
+            <button type="capsule" style="background-color: lightgrey; width:23%; ">9 inches</button>
+        </div>
+    </div>
+    <div class="carts">
+        <button type="circle" style="background-color: lightgrey; margin: 0% 10px;">&#x1F90D;</button>
+        <button type="capsule" value="Add to Cart" style="width: 500px; margin: 0 30px;"></button>
+    </div>
+</div>

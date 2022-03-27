@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="header">
+        <image src="../../common/images/icons8-grid-64.png"></image>
+        <image src="../../common/images/icons8-grid-64.png"></image>
+    </div>
+    <div class="discover">
+        <text style="font-size: 30px;">
+            Discover
+        </text>
+
+        <text style="font-size: 20px;">
+            New items
+        </text>
+    </div>
+    <div style="display: flex; left: 0%;">
+        <search hint="Search Items"onsearch="searchDict" style="height: 30px; width: 85%; margin-top: 8px;"></search>
+        <button type="circle" class="filter" icon="/common/images/filter.png" onclick="filterPage"></button>
+    </div>
+    <div class="content">
+        <image src="../../common/images/icon.ico"></image>
+        <div class="discover" style="width: 45%;">
+            <text style="font-size: 20px;">Running unisex shoes</text>
+            <text style="font-size: 15px; color: blue;"> Coming soon</text>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <switch></switch>
+            <text style="font-size: 15px;">
+                Notify Me
+            </text>
+        </div>
+    </div>
+
+    <!-- xxx.hml -->
+    <div style="flex-direction: column;">
+        <div style="flex-wrap: wrap">
+            <toggle class="margin" for="{{toggle_list}}" id="{{$item.id}}" checked="{{$item.checked}}"
+                    value="{{$item.name}}" @change="allchange" @click="allclick({{$item.id}})"></toggle>
+        </div>
+    </div>
+
+
+    <div class="shoes">
+        <div class="shoes-comps">
+            <text style="position: absolute; left: 70%; top: 6px; font-size: 20px;" onclick="onLike">&#10084;</text>
+            <image src="../../common/images/s1.png" onclick="detailPage" style="margin-top: 5px; height: 60%;"></image>
+            <text style="font-size: 22px;">
+                <span>Golden UniSex Shoes   Edition 1</span>
+            </text>
+            <text>
+                $200
+            </text>
+        </div>
+        <div class="shoes-comps">
+            <text style="position: absolute; left: 70%; top: 6px; font-size: 20px;" onclick="onLike">&#x1F90D;</text>
+            <image src="../../common/images/s2.png" onclick="detailPage" style="width: 90%; height: 60%; margin-top: 25px; margin-left: 10px;"></image>
+            <text style="font-size: 22px;">
+                <span>Green UniSex Shoes   Edition 1</span>
+            </text>
+            <text>
+                $200
+            </text>
+        </div>
+    </div>
+    <div>
+        <divider vertical="false" style="stroke-width: 2px; color: blue; margin-top: 16px;"></divider>
+    </div>
+    <div class="footer">
+        <div>
+            <image src="../../common/images/home.png"  style="width: 25px; height: 25px; margin-top: 25px;"></image>
+            <text>Home</text>
+        </div>
+        <div>
+            <image src="../../common/images/category.png"  style="width: 25px; height: 25px; margin-top: 25px;"></image>
+            <text>Categories</text>
+        </div>
+        <div>
+            <image src="../../common/images/notifications.png"  style="width: 25px; height: 25px; margin-top: 25px;"></image>
+            <text>Notification</text>
+        </div>
+        <div disabled="true">
+            <image src="../../common/images/cart.png"  style="width: 25px; height: 25px; margin-top: 25px;"></image>
+            <text>My Cart</text>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+{
+    "app": {
+        "bundleName": "com.example.ecom_app.hmservice",
+        "vendor": "example",
+        "apiVersion": {
+            "compatible": 7,
+            "target": 7,
+            "releaseType": "Beta1"
+        },
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {
+        "default": {
+            "debug": true
+        }
+    },
+    "module": {
+        "name": ".MyApplication",
+        "deviceType": [
+            "phone",
+            "tablet",
+            "tv",
+            "wearable"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry",
+            "installationFree": true
+        },
+        "abilities": [
+            {
+                "name": "com.example.ecom_app.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "$string:entry_MainAbility",
+                "type": "page",
+                "launchType": "standard",
+                "visible": true,
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "homeAbility": true
+            }
+        ],
+        "js": [
+            {
+                "name": "default",
+                "pages": [
+                    "pages/index/index",
+                    "pages/detail/detail",
+                    "pages/filter/filter"
+                ],
+                "window": {
+                    "designWidth": 720,
+                    "autoDesignWidth": true
+                }
+            }
+        ],
+        "mainAbility": "com.example.ecom_app.MainAbility",
+        "package": "com.example.ecom_app"
+    }
+}

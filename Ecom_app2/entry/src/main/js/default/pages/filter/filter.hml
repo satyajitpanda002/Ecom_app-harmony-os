@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="header">
+        <text style="width: 12%; background-color: lightgrey; border-radius: 5px;" onclick="indexPage">{{back}}</text>
+        <text style="width: 76%; text-align: center;">Filter</text>
+        <text style="width: 12%; font-weight: bold;">..</text>
+    </div>
+    <div class="gender flex-col">
+        <text style="font-weight: bold;">Gender</text>
+        <div class="flex-row">
+            <button type="capsule" style="margin: 0% 10px; margin-left: 0%;"  value="Male"></button>
+            <button type="capsule" style="margin: 0%; background-color: lightgrey" value="Female"></button>
+            <button type="capsule" style="margin: 0% 10px; background-color: lightgrey" value="Both"></button>
+        </div>
+    </div>
+    <div class="category flex-col">
+        <text style="font-weight: bold;">Category</text>
+        <select style="height: 50px; width: 100%; margin: 0% 5%; background-color: lightgrey;">
+            <option value="">Select Category</option>
+        </select>
+    </div>
+    <div class="brand flex-col">
+        <text style="font-weight: bold;">Brand</text>
+        <select style="height: 50px; width: 100%; margin: 0% 5%; background-color: lightgrey;">
+            <option value="">Select Brand</option>
+        </select>
+    </div>
+    <div class="price flex-col">
+        <div class="flex-row" style="margin: 5px 0%;">
+            <text style="width: 30%; font-size: 20px;">Min Price</text>
+            <slider min="0" max="1000" value="100" style="margin-top: 4px; width: 65%;"></slider>
+        </div>
+        <div class="flex-row" style="margin: 5px 0%;">
+            <text style="width: 30%; font-size: 20px;">Max price</text>
+            <slider min="0" max="1000" value="900" style="margin-top: 4px; width: 65%;"></slider>
+        </div>
+    </div>
+    <div class="sizes flex-col">
+        <text style="font-size: 25px;">Sizes</text>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 10px;">
+            <button type="capsule" style="background-color: lightgrey; width:23%; ">6 inches</button>
+            <button type="capsule" style="background-color: lightgrey; width:23%; ">7 inches</button>
+            <button type="capsule" style="background-color: blue; width:23%; ">8 inches</button>
+            <button type="capsule" style="background-color: lightgrey; width:23%; ">9 inches</button>
+        </div>
+    </div>
+    <div class="flex-row add-clear">
+        <button type="capsule" value="Clear All" style="width: 500px; background-color: lightgrey; margin: 0 30px;"></button>
+        <button type="capsule" value="Add" style="width: 500px; margin: 0 30px;"></button>
+    </div>
+</div>
